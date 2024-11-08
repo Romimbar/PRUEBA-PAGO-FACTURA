@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="@color/secondary">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="463dp"
+        android:layout_height="859dp"
+        app:srcCompat="@drawable/menu3_1__1_"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="-106dp" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/inria_sans"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="BUSCAR SOCIO" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/input_login"
+        android:ems="10"
+        android:hint="  DNI"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_secondary"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIrRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/button_menu"
+        android:text="Registro"
+        app:backgroundTint="@null"
+        app:icon="@drawable/account_circle"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/btnIrGenerarCarnet"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_menu"
+        android:text="Generar carnet"
+        app:backgroundTint="#4E5462"
+        app:icon="@drawable/photo"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnIrRegistro" />
+
+    <Button
+        android:id="@+id/btnIrPago"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_menu"
+        android:text="Pagos"
+        app:backgroundTint="#83778E"
+        app:icon="@drawable/stars"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnIrGenerarCarnet" />
+
+    <Button
+        android:id="@+id/btnIrListar"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_menu"
+        android:text="Lista de vencimiento"
+        app:backgroundTint="#3C3749"
+        app:icon="@drawable/list"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnIrPago" />
+</androidx.constraintlayout.widget.ConstraintLayout>

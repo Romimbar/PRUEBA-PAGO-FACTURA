@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carnet"
+    android:background="#424040">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/vencimiento_cuota_1" />
+
+        <View
+            android:layout_width="255dp"
+            android:layout_height="681dp"
+            android:background="@drawable/gradient_blur" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnVolverCarnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_secondary"
+        android:text="Volver"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_secondary"
+        android:text="Buscar"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+    <EditText
+        android:id="@+id/editTextText9"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/input_login"
+        android:ems="10"
+        android:hint="  DNI"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/inria_sans"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="BUSCAR SOCIO" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_menu"
+        android:text="     Generar carnet"
+        app:backgroundTint="@color/secondary"
+        app:icon="@drawable/photo"
+        app:iconPadding="-6dp"
+        app:iconSize="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText9"
+        app:layout_constraintStart_toEndOf="@+id/editTextText9"
+        app:layout_constraintTop_toTopOf="@+id/editTextText9"
+        app:srcCompat="@drawable/keyboard" />
+    <!-- CardView del Carnet -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCarnet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/editTextText9"
+        app:layout_constraintTop_toBottomOf="@id/button11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#80FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/logoClub"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logo_mi_club_1"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MI CLUB"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#80000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombreCarnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvDNICarnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvFechaCarnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGenerarPDFCarnet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENERAR PDF"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_secondary"
+                app:backgroundTint="@null"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:layout_width="155dp"
+        android:layout_height="533dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="197dp">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

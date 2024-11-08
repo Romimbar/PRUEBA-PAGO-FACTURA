@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MobileClub</string>
+    <string name="login">LOGIN</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="fondo">fondo</string>
+    <string name="tarjeta_3_pagos_sin_inter_s">Tarjeta 3 PAGOS sin interés</string>
+    <string name="tarjeta_1_pago_sin_inter_s">TARJETA 1 PAGO sin interés</string>
+    <string name="efectivo_10_descuento">EFECTIVO: 10% Descuento</string>
+    <string name="total">TOTAL:</string>
+    <string name="pilates_musculaci_n">Pilates - Musculación</string>
+    <string name="actividades">ACTIVIDADES:</string>
+    <string name="romero">Romero</string>
+    <string name="apellido">APELLIDO:</string>
+    <string name="faustina">Faustina</string>
+    <string name="nombre">NOMBRE:</string>
+    <string name="_22334565">22334565</string>
+    <string name="dni">DNI:</string>
+    <string name="volver">VOLVER</string>
+    <string name="generar_pdf">Generar PDF</string>
+    <string name="mi_club">MI CLUB</string>
+    <string name="_3342">$3342</string>
+    <string name="club_deportivo">CLUB DEPORTIVO</string>
+    <string name="todo">TODO</string>
+</resources>
